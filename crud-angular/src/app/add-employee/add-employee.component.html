@@ -15,14 +15,15 @@
     routerLinkActive="active"
     ariaCurrentWhenActive="page"
     style="text-decoration: none; color: white"
-    >Home</a
   >
+    Home
+  </a>
 </button>
 
 <form (ngSubmit)="onSubmit()" style="text-align: center">
   <h3 *ngIf="false">
-    <label for="empid">Employee Id :</label
-    ><input
+    <label for="empid">Employee Id :</label>
+    <input
       type="text"
       class="form-control"
       [(ngModel)]="employee.empId"
@@ -31,8 +32,8 @@
     />
   </h3>
   <h3>
-    <label for="firstName">First Name :</label
-    ><input
+    <label for="firstName">First Name :</label>
+    <input
       type="text"
       class="form-control"
       [(ngModel)]="employee.firstName"
@@ -41,8 +42,8 @@
     />
   </h3>
   <h3>
-    <label for="lastName">Last Name :</label
-    ><input
+    <label for="lastName">Last Name :</label>
+    <input
       type="text"
       class="form-control"
       [(ngModel)]="employee.lastName"
@@ -51,8 +52,8 @@
     />
   </h3>
   <h3>
-    <label for="email">Emp Emailid :</label
-    ><input
+    <label for="email">Emp Emailid :</label>
+    <input
       type="text"
       class="form-control"
       [(ngModel)]="employee.emailId"
