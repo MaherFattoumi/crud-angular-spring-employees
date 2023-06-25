@@ -11,11 +11,13 @@ import { EmployeeService } from '../employee.service';
 export class UpdateEmployeeComponent {
   public empId!: number;
   public employee!: Employee;
+
   constructor(
     private route: ActivatedRoute,
     private router: Router,
     private employeeService: EmployeeService
   ) {}
+
   ngOnInit(): void {
     this.empId = this.route.snapshot.params['empId'];
     this.employee = new Employee();

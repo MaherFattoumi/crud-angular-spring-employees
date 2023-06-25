@@ -19,11 +19,13 @@ export class EmployeeListComponent implements OnInit {
   ngOnInit(): void {
     this.getEmployees();
   }
+
   getEmployees() {
     this.employeeService.getEmployeeList().subscribe((data) => {
       this.employees = data;
     });
   }
+
   updateEmployee(employee: Employee) {
     this.router.navigate(['updateEmployee', employee]);
   }
@@ -34,6 +36,7 @@ export class EmployeeListComponent implements OnInit {
       .subscribe((data) => this.getEmployees());
     alert('Employee deleted successfully !');
   }
+
   viewEmployee(empId: number) {
     this.router.navigate(['viewEmployee', empId]);
   }

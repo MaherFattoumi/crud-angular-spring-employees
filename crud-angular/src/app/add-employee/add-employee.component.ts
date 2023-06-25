@@ -10,10 +10,12 @@ import { Router } from '@angular/router';
 })
 export class AddEmployeeComponent implements OnInit {
   employee!: Employee;
+
   constructor(
     private employeeService: EmployeeService,
     private router: Router
   ) {}
+
   ngOnInit(): void {
     this.employee = new Employee();
   }

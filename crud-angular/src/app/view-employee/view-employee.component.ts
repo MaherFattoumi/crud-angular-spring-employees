@@ -11,10 +11,12 @@ import { Employee } from '../employee';
 export class ViewEmployeeComponent implements OnInit {
   public empId!: number;
   public employee!: Employee;
+
   constructor(
     private route: ActivatedRoute,
     private employeeService: EmployeeService
   ) {}
+
   ngOnInit(): void {
     this.empId = this.route.snapshot.params['empId'];
     this.employee = new Employee();
