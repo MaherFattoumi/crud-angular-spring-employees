@@ -1,0 +1,28 @@
+<h1 style="text-align: center">Employee Details</h1>
+<hr />
+<button
+  style="
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    padding: 1%;
+    border-radius: 10px;
+    border: 0px;
+  "
+>
+  <a
+    routerLink=""
+    routerLinkActive="active"
+    ariaCurrentWhenActive="page"
+    style="text-decoration: none; color: white"
+  >
+  Home
+  </a>
+</button>
+
+<div style="text-align: center">
+  <h3>Employee Id : {{ employee.empId }}</h3>
+  <h3>First Name : {{ employee.firstName }}</h3>
+  <h3>Last Name : {{ employee.lastName }}</h3>
+  <h3>Emp Emailid : {{ employee.emailId }}</h3>
+</div>
